@@ -28,7 +28,7 @@ const TaskList = () => {
     
             <View>
     
-                <Button title="Add Task" onPress={handleAddTask} />
+                <Button title="Add default Task" onPress={handleAddTask} />
     
                 {tasks.map((task, index) => (
     
