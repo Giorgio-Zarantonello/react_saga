@@ -16,7 +16,7 @@ const App = () => {
             name="Main"
             component={MainScreen}
             options={{
-              title: 'Task Manager',
+              title: '🐱Cat Manager 🐱',
             }}
           />
         </Stack.Navigator>

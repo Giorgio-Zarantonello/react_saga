@@ -1,15 +1,15 @@
 import React from "react";
 import { View, TextInput, Button } from "react-native";
 import { useDispatch } from "react-redux";
-import { addTask } from "../slice/taskSlice";
+import { addCat } from "../slice/catSlice";
 
-const AddTaskScreen = () => {
+const AddCatScreen = () => {
     const dispatch = useDispatch();
     const [ title , setTitle ] = React.useState("");
     const [ description , setDescription ] = React.useState("");
 
-    const handleAddTask = () => {
-        dispatch(addTask({ title, description }));
+    const handleAddCat = () => {
+        dispatch(addCat({ title, description }));
         setTitle("");
         setDescription("");
     };
@@ -26,9 +26,9 @@ const AddTaskScreen = () => {
                 value={description}
                 onChangeText={setDescription}
             />
-            <Button title="Add Task" onPress={handleAddTask} />
+            <Button title="Add Cat" onPress={handleAddCat} />
         </View>
     );
 };
 
-export default AddTaskScreen;
+export default AddCatScreen;

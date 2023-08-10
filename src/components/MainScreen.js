@@ -1,14 +1,14 @@
 import React from 'react';
 import {View} from 'react-native';
-import AddTaskScreen from './AddTaskScreen';
-import TaskList from './TaskList';
+import AddCatScreen from './AddCatScreen';
+import CatList from './CatList';
 
 const MainScreen = () => {
   return (
     <View>
-      <AddTaskScreen />
-        <TaskList />
-      </View>
+      <AddCatScreen />
+      <CatList />
+    </View>
   );
 };
 

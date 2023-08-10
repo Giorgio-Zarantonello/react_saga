@@ -1,4 +1,4 @@
-class Task {
+class Cat {
     constructor(title, description) {
         this.title = title;
         this.description = description;
@@ -6,4 +6,4 @@ class Task {
     }
 }
 
-export default Task;
+export default Cat;

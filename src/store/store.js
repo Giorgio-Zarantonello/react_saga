@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "@redux-saga/core";
 import 'react-native-gesture-handler'
 
-import taskReducer from "../slice/taskSlice";
+import catReducer from "../slice/catSlice";
 import rootSaga from "../sagas/sagas";
 
 
@@ -23,7 +23,7 @@ const sagaMiddleware = createSagaMiddleware();
 const store = configureStore ({
     reducer : {
         // aggiungiamo il reducer del task allo store
-        task : taskReducer,
+        cat : catReducer,
     },
     // aggiungiamo il middleware saga allo store
     middleware : [sagaMiddleware]
