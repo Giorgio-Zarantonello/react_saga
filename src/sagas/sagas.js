@@ -19,6 +19,12 @@ function* modifyTaskAsync(action) {
     yield put(modifyTask(action.payload));
 }
 
+function* deleteTaskAsync(action) {
+    
+    yield put(deleteTask(action.payload));
+}
+
+
 
 // watcher saga
 // in redux-saga, un watcher saga è un generatore che aspetta una azione
@@ -43,4 +49,5 @@ function* watchModifyTask() {
 
 export default function* rootSaga() {
     yield watchAddTask();    
+    yield watchModifyTask();
 }
