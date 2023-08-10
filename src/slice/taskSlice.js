@@ -1,4 +1,4 @@
-import {creasteSlice} from '@reduxjs/toolkit'
+import {createSlice} from '@reduxjs/toolkit'
 
 // initial state
 const initialState = {
