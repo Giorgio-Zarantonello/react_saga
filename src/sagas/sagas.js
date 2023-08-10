@@ -36,9 +36,6 @@ function* watchAddTask() {
     yield takeLatest ('task/addTask', addTashAsync);
 }
 
-function* watchModifyTask() {
-    yield call ('task/modifyTask', modifyTaskAsync);
-}
 
 // root saga
 // questo è il nostro root saga, che viene eseguito all'avvio dell'applicazione
@@ -49,5 +46,4 @@ function* watchModifyTask() {
 
 export default function* rootSaga() {
     yield watchAddTask();    
-    yield watchModifyTask();
 }
