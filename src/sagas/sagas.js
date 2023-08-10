@@ -14,15 +14,6 @@ function* addTashAsync(action) {
     yield put(addTask(action.payload));
 }
 
-function* modifyTaskAsync(action) {
-    
-    yield put(modifyTask(action.payload));
-}
-
-function* deleteTaskAsync(action) {
-    
-    yield put(deleteTask(action.payload));
-}
 
 
 
