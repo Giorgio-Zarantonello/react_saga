@@ -14,6 +14,12 @@ function* addTashAsync(action) {
     yield put(addTask(action.payload));
 }
 
+function* modifyTaskAsync(action) {
+    
+    yield put(modifyTask(action.payload));
+}
+
+
 // watcher saga
 // in redux-saga, un watcher saga è un generatore che aspetta una azione
 // e invoca un worker saga per ogni azione corrispondente
@@ -24,6 +30,10 @@ function* watchAddTask() {
     yield takeLatest ('task/addTask', addTashAsync);
 }
 
+function* watchModifyTask() {
+    yield call ('task/modifyTask', modifyTaskAsync);
+}
+
 // root saga
 // questo è il nostro root saga, che viene eseguito all'avvio dell'applicazione
 // in questo caso, esegue solo il watcher saga `watchAddTask`
@@ -32,5 +42,5 @@ function* watchAddTask() {
 // avere un altro watcher saga che gestisce le azioni `task/deleteTask`
 
 export default function* rootSaga() {
-    yield watchAddTask();
+    yield watchAddTask();    
 }

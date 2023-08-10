@@ -1,9 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import AddTaskScreen from './src/components/AddTaskScreen';
+import MainScreen from './src/components/MainScreen';
 import store from './src/store/store';
 
 const Stack = createStackNavigator();
@@ -11,21 +10,19 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <Provider store={store}>
-
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="Add Task"
-            component={AddTaskScreen}
+            name="Main"
+            component={MainScreen}
             options={{
-              title: 'Add Task',
+              title: 'Task Manager',
             }}
           />
         </Stack.Navigator>
       </NavigationContainer>
-
     </Provider>
   );
-}
+};
 
 export default App;
