@@ -4,15 +4,15 @@ Welcome to the React Native Redux Saga Project! This repository contains a React
 
 ## Key Features:
 
-**Task Creation:** Users can add new tasks by specifying a title and description. Adding a new task triggers an asynchronous action managed by Redux Saga.
+**Task Creation:** Users can add new tasks by specifying a title and description. Adding a new task triggers an asynchronous action managed by Redux Saga. :white_check_mark:
 
 **Task Modification:** Users can modify details of existing tasks, such as the title or description. This operation is also handled through an asynchronous action with Redux Saga.
 
-**Task Deletion:** Users can delete tasks that are no longer needed. This operation is also managed through Redux Saga.
+**Task Deletion:** Users can delete tasks that are no longer needed. This operation is also managed through Redux Saga. :white_check_mark:
 
-**Task Viewing:** A list of tasks will be displayed within the app, allowing users to clearly see the tasks they need to complete.
+**Task Viewing:** A list of tasks will be displayed within the app, allowing users to clearly see the tasks they need to complete. :white_check_mark:
 
-**State Management with Redux:** Utilize Redux to manage the application's state, including the state of tasks.
+**State Management with Redux:** Utilize Redux to manage the application's state, including the state of tasks. :white_check_mark:
 
 **Asynchronous Operations with Redux Saga:** Harness the power of Redux Saga to manage asynchronous operations such as adding, modifying, and deleting tasks. This will help you understand how Redux Saga simplifies handling asynchronous workflows within a React Native app.
 
